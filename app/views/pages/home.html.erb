@@ -1,2 +1,26 @@
-Home page
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "NewLogo2.png" %>
+  <% end %>
+  <h2 id="name">Susan Renaud</h2>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item-light">
+      <%= link_to "Projects", projects_path, class: "btn btn-primary" %>
+      </li>
+      <li class="nav-item active">
+        <i class="fas fa-plus"></i>
+        <%= link_to('Download CV', root_path) %>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-container">
+  <div id="title"><h2>About<h2></div>
+  <div class="description">
+  <h3>Full-stack Web Developer interested in UX Research and Data Analysis. Research and applied psychology background. Recent graduate of Le Wagon London intensive 9 week full-stack bootcamp. Currently based in Houston, TX, USA. Willing to relocate or work remotely.
+  </h3>
+</div>
+
 
