@@ -4,8 +4,6 @@
  width: 100%;
  justify-content: space-between;
  position: fixed;
- padding-bottom: 20px;
- z-index: 1000;
  background-color: #FFFFFF;
 }
 
@@ -19,27 +17,22 @@
 .navbar .navbar-collapse {
  flex-grow: 0;
 }
-.navbar-lewagon .navbar-brand img {
 
+.navbar-brand img {
  width: 60px;
  border-radius: 50%;
- padding-top: 10px;
-}
+ margin: 20px 0 0 20px;
 
-.projects {
-  ;
-}
+ }
+
+
 
 .nav-item {
   margin: auto 16px;
 
-  i {
-    margin-right: 8px;
-  }
 
-  a.btn {
-      color: white;
-  }
+
+
 
   a {
     color: black;

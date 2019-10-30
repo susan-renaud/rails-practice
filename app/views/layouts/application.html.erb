@@ -9,6 +9,7 @@
     <meta name="keywords" content="susan renaud, portfolio, ux, user research, research, full stack web development, web development, data analyst, data analysis, ruby on rails, le wagon">
     <meta name="author" content="Susan Renaud">
     <title>Susan Renaud - Portfolio</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 
 
     <%= csrf_meta_tags %>
@@ -19,6 +20,25 @@
   </head>
 
   <body>
+    <div class="navbar">
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "NewLogo2.png" %>
+    <% end %>
+
+
+      <div class="collapse navbar-collapse" id="  navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item-light">
+        <%= link_to "Projects", projects_path, class: "btn btn-primary" %>
+        </li>
+        <li class="nav-item active">
+          <i class="fas fa-plus"></i>
+          <%= link_to('Download CV', root_path) %>
+        </li>
+        </ul>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
