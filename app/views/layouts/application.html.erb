@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="UX Researcher, Data Analyst, and Full-Stack Web Developer">
@@ -25,19 +24,25 @@
     <%= image_tag "NewLogo2.png" %>
     <% end %>
 
+      <div><h2 id="name">Susan Renaud</h2></div>
 
-      <div class="collapse navbar-collapse" id="  navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item-light">
-        <%= link_to "Projects", projects_path, class: "btn btn-primary" %>
-        </li>
-        <li class="nav-item active">
-          <i class="fas fa-plus"></i>
-          <%= link_to('Download CV', root_path) %>
-        </li>
-        </ul>
+      <div class="navbar-buttons">
+        <btn class="btns">
+          <%= link_to('About', root_path) %>
+        </btn>
+        <btn class="btns">
+          <%= link_to('Projects', projects_path) %>
+        </btn>
+        <btn class="btns">
+          <%= link_to('Resume', root_path) %>
+        </btn>
+        <btn class="btns">
+          <%= link_to "Contact", projects_path, class: "contact" %>
+        </btn>
       </div>
+
     </div>
+
 
     <%= yield %>
   </body>

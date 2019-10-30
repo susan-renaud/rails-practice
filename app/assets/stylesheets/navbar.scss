@@ -7,16 +7,34 @@
  background-color: #FFFFFF;
 }
 
+.navbar-buttons {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.btns{
+  margin: 25px 20px;
+}
+
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
 #title {
   position: relative;
 }
 
 #name {
   font-weight: lighter;
+  text-align:left;
+  margin-right: 650px;
 }
-.navbar .navbar-collapse {
- flex-grow: 0;
-}
+
 
 .navbar-brand img {
  width: 60px;
@@ -30,12 +48,5 @@
 .nav-item {
   margin: auto 16px;
 
-
-
-
-
-  a {
-    color: black;
-  }
 }
 
