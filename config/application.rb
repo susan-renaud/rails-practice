@@ -1,13 +1,7 @@
 require_relative 'boot'
 
 require "rails"
-require 'globalize'
 
-Globalize.fallbacks = {
-  ko: %i[ko en],
-  en: %i[en th],
-  th: %i[th en]
-}
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
